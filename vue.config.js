@@ -1,5 +1,6 @@
+// vue.config.js
 module.exports = {
-  publicPath: '/your-repo-name/',
+  publicPath: '/AminPortfolio/', // 👈 this must match your GitHub repo name
   pages: {
     index: {
       entry: 'src/main.js',
