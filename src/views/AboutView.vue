@@ -16,7 +16,7 @@
         class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">
         <div class="flex justify-center">
           <img class="w-9/12 rounded-full mb-3 fadein-up"
-            src="/img/amin.jpg" alt="Foto">
+            src="img/amin.jpg" alt="Foto">
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
@@ -216,19 +216,19 @@ export default {
         {
           id: 5,
           name: 'Python',
-          imageUrl: './img/python_logo.png',
+          imageUrl: 'img/python_logo.png',
           status: 'Intermediate'
         },
         {
           id: 6,
           name: 'Java',
-          imageUrl: './img/java_logo.png',
+          imageUrl: 'img/java_logo.png',
           status: 'Advanced'
         },
         {
           id: 7,
           name: 'C++',
-          imageUrl: './img/c++_logo.png',
+          imageUrl: 'img/c++_logo.png',
           status: 'Intermediate'
         },
         {
