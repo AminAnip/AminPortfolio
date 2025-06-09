@@ -1,6 +1,4 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig(
-  module.exports = {
+module.exports = {
   publicPath: '/your-repo-name/',
   pages: {
     index: {
@@ -9,4 +7,3 @@ module.exports = defineConfig(
     }
   }
 }
-)
