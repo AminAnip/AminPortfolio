@@ -216,19 +216,19 @@ export default {
         {
           id: 5,
           name: 'Python',
-          imageUrl: 'python_logo',
+          imageUrl: './img/python_logo.png',
           status: 'Intermediate'
         },
         {
           id: 6,
           name: 'Java',
-          imageUrl: 'java_logo',
+          imageUrl: './img/java_logo.png',
           status: 'Advanced'
         },
         {
           id: 7,
           name: 'C++',
-          imageUrl: 'c++_logo',
+          imageUrl: './img/c++_logo.png',
           status: 'Intermediate'
         },
         {
