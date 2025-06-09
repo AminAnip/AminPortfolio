@@ -27,7 +27,7 @@
     <div class="flex justify-center md:justify-start fadein-right"><img
   alt="avatar"
   class="w-60 h-60 md:w-72 md:h-72 rounded-full border-4 border-amber-200 pict"
-  src="`${process.env.BASE_URL}img/amin.jpg`"/>
+  src="img/amin.jpg"/>
     </div>
   </main>
 
