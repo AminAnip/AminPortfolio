@@ -1,3 +1,5 @@
+AboutView.vue
+
 <template>
   <!-- About Me Section -->
   <div
@@ -184,7 +186,7 @@ export default {
           duration: 'Mac 2023 - Sep 2023',
           location: 'Shah Alam, Selangor, Malaysia',
           description: 'Designed and developed custom WordPress themes and plugins using PHP, HTML, CSS, and JavaScript. Also contributed to the creation of digital content, including videos, graphics, and social media posts, using tools such as Adobe Premiere Pro, CapCut, and Canva. Additionally, assisted in organizing and coordinating company programs, including workshops, product launches, and internal events.',
-          image: 'img/nlp.png',
+          image: '/AminPortfolio/img/nlp.png',
           skills: ['Html', 'CSS', 'JavaScript']
         }
       ],
