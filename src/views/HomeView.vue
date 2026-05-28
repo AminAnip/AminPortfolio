@@ -1,3 +1,5 @@
+//HomeView.vue
+
 <template>
   <main
     class="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-[65vh] md:min-h-[80vh]">
@@ -27,7 +29,7 @@
     <div class="flex justify-center md:justify-start fadein-right"><img
   alt="avatar"
   class="w-60 h-60 md:w-72 md:h-72 rounded-full border-4 border-amber-200 pict"
-  src="`${process.env.BASE_URL}img/amin.jpg`"/>
+  src="img/amin.jpg"/>
     </div>
   </main>
 
@@ -101,7 +103,7 @@ export default {
   name: 'HomeView',
   data() {
     return {
-      toRotate: ["Final Year Student","Computer Science", "Seeking Internship for Sep 2025 - Dec 2025"],
+      toRotate: ["Final Year Student","Computer Science", "Looking for a jobs..."],
       period: 2000,
       txt: '',
       loopNum: 0,
