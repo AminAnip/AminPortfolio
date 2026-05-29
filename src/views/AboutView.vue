@@ -182,12 +182,22 @@ export default {
         {
           id: 1,
           company: 'Akademi NLP Malaysia',
-          position: 'Intern',
+          position: 'Web Developer Intern',
           duration: 'Mac 2023 - Sep 2023',
           location: 'Shah Alam, Selangor, Malaysia',
           description: 'Designed and developed custom WordPress themes and plugins using PHP, HTML, CSS, and JavaScript. Also contributed to the creation of digital content, including videos, graphics, and social media posts, using tools such as Adobe Premiere Pro, CapCut, and Canva. Additionally, assisted in organizing and coordinating company programs, including workshops, product launches, and internal events.',
           image: '/AminPortfolio/img/nlp.png',
           skills: ['Html', 'CSS', 'JavaScript']
+        },
+        {
+          id: 2,
+          company: 'Intec Education Collage',
+          position: 'IT Support Intern',
+          duration: 'Sep 2025 - Dec 2025',
+          location: 'Shah Alam, Selangor, Malaysia',
+          description: 'Supported the setup, configuration, and maintenance of IT equipment including PCs, printers, projectors, and other peripherals. Provided assistance with user account creation, access management, and basic system administration tasks.Assisted in maintaining and updating IT documentation, asset inventory, and tracking records to ensure accurate and organized information. Troubleshot hardware, software, and network-related issues, providing timely support to staff and ensuring minimal downtime.',
+          image: '/AminPortfolio/img/intec.jpg',
+          skills: ['IT Support & Troubleshooting']
         }
       ],
       tech: [

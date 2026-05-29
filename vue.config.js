@@ -3,7 +3,7 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-  publicPath: '/AminPortfolio/', // Should match your repo name
+  publicPath: '/AminPortfolio/', 
   pages: {
     index: {
       entry: 'src/main.js',
