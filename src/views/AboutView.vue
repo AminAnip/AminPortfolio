@@ -198,6 +198,16 @@ export default {
           description: 'Supported the setup, configuration, and maintenance of IT equipment including PCs, printers, projectors, and other peripherals. Provided assistance with user account creation, access management, and basic system administration tasks.Assisted in maintaining and updating IT documentation, asset inventory, and tracking records to ensure accurate and organized information. Troubleshot hardware, software, and network-related issues, providing timely support to staff and ensuring minimal downtime.',
           image: '/AminPortfolio/img/intec.jpg',
           skills: ['IT Support & Troubleshooting']
+        },
+        {
+          id: 3,
+          company: 'Adastra Intellectual Property Sdn Bhd',
+          position: 'Khazanah Youth Development Trainee',
+          duration: 'April 2026 - Aug 2026',
+          location: 'Kuala Lumpur, Malaysia',
+          description: 'Utilized IP management systems such as IP Pilot to manage patent records, outbound case flows, and client information. Collaborated with supervisors and business teams to validate automation requirements and workflow designs. Performed Excel data processing, validation, and formula development for IP-related calculations. Provided IT support, including laptop formatting, driver installation, and system troubleshooting.',
+          image: '/AminPortfolio/img/adastra.png',
+          skills: ['Excel','Data Analysis','IT Support & Troubleshooting']
         }
       ],
       tech: [
