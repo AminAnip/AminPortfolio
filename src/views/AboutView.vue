@@ -22,15 +22,16 @@ AboutView.vue
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp; Hi everyone! I am Muhammad Nur Amin Bin Mohamad Anip, a passionate and goal-oriented 
-            Computer Science student with a strong enthusiasm for technology and creativity. 
-            My journey in the field has equipped me with skills in software development, web design, 
-            and graphic design, allowing me to bring innovative ideas to life.
+            &nbsp; &nbsp; &nbsp; Hi everyone! I am Muhammad Nur Amin Bin Mohamad Anip, a 
+            passionate and goal-oriented Computer Science graduate with a strong enthusiasm for 
+            technology and creativity. My academic journey has equipped me with knowledge and 
+            skills in software development, web design, graphic design, IT support, and troubleshooting. I enjoy exploring new technologies, solving technical problems, and developing practical solutions.
           </p>
           <p class="mb-3 fadein-left fadeins-2">
-            &nbsp; &nbsp; &nbsp; Currently pursuing my Bachelor's degree at Universiti Teknologi MARA (UITM) Shah Alam, 
-            I am eager to explore new opportunities that allow me to grow, innovate, and make a meaningful impact in 
-            the world of technology.
+            &nbsp; &nbsp; &nbsp; I am a fresh graduate with a Bachelor's Degree in Computer Science
+            from Universiti Teknologi MARA (UiTM) Shah Alam. I am currently seeking opportunities to 
+            kickstart my professional career, enhance my technical skills, gain valuable industry 
+            experience, and contribute to the IT industry through continuous learning and innovation.
           </p>
         </div>
 
@@ -108,69 +109,88 @@ AboutView.vue
     </article>
   </div>
 
+  
   <!-- Work Experience Section -->
-  <div class="container mx-auto p-3 md:p-8">
-    <div class="flex flex-col-reverse md:flex-row relative">
-      <div class="w-full md:w-2/3">
-        <header class="mb-8">
-          <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
-            <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate" data-aos="zoom-in-left"
-              data-aos-duration="600"></div>
-            &nbsp; Work Experience
-          </div>
-        </header>
-        
-        <div class="flex flex-col gap-6 md:px-20 fade-zoom-up">
-          <div v-for="experience in experiences" :key="experience.id" 
-               class="bg-[#1e1e1f] border border-[#383838] rounded-xl text-left text-white p-6 md:p-8 hover:bg-[#282828] transition-all duration-300">
-            
-            <div class="flex flex-col md:flex-row gap-4 md:gap-6">
-              <!-- Company Logo/Image -->
-              <div class="flex-shrink-0">
-                <div class="w-16 h-16 md:w-20 md:h-20 bg-amber-200 bg-opacity-10 rounded-lg flex items-center justify-center">
-                  <img v-if="experience.image" :src="experience.image" :alt="experience.company" 
-                       class="w-12 h-12 md:w-16 md:h-16 object-contain rounded">
-                  <div v-else class="text-amber-200 font-bold text-lg md:text-xl">
-                    {{ experience.company.charAt(0) }}
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Experience Details -->
-              <div class="flex-grow">
-                <div class="mb-3">
-                  <h3 class="text-lg md:text-xl font-bold text-amber-200 mb-1">{{ experience.position }}</h3>
-                  <h4 class="text-md md:text-lg text-white font-semibold">{{ experience.company }}</h4>
-                  <div class="flex flex-col md:flex-row md:items-center gap-2 mt-2 text-sm text-slate-400">
-                    <div class="flex items-center">
-                      <div class="h-[1px] w-4 bg-amber-200 mr-2"></div>
-                      {{ experience.duration }}
-                    </div>
-                    <div class="hidden md:block text-slate-500">•</div>
-                    <div>{{ experience.location }}</div>
-                  </div>
-                </div>
-                
-                <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
-                  {{ experience.description }}
-                </p>
-                
-                <!-- Skills/Technologies -->
-                <div class="flex flex-wrap gap-2">
-                  <span v-for="skill in experience.skills" :key="skill"
-                        class="px-3 py-1 bg-amber-200 bg-opacity-10 text-amber-200 text-xs rounded-full border border-amber-200 border-opacity-30">
-                    {{ skill }}
-                  </span>
+  <div class="w-full px-5 py-8 md:px-12 md:py-10">
+    <article>
+      <header class="mb-8">
+        <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
+          <div class="h-[1px] w-10 bg-amber-200 md:w-20"></div>
+          &nbsp; Work Experience
+          <div class="h-[1px] flex-grow ml-4 bg-amber-200"></div>
+        </div>
+      </header>
+
+      <div class="w-full flex flex-col gap-6 fade-zoom-up">
+
+        <div
+          v-for="experience in experiences"
+          :key="experience.id"
+          class="w-full bg-[#1e1e1f] border border-[#383838] rounded-2xl text-left text-white p-5 md:p-8 hover:bg-[#282828] transition-all duration-300">
+
+          <div class="flex flex-col md:flex-row gap-5 md:gap-8">
+
+            <!-- Company Logo -->
+            <div class="flex-shrink-0">
+              <div class="w-20 h-20 md:w-24 md:h-24 bg-amber-200 bg-opacity-10 rounded-xl flex items-center justify-center">
+                <img
+                  v-if="experience.image"
+                  :src="experience.image"
+                  :alt="experience.company"
+                  class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg">
+
+                <div v-else class="text-amber-200 font-bold text-xl">
+                  {{ experience.company.charAt(0) }}
                 </div>
               </div>
             </div>
+
+            <!-- Experience Details -->
+            <div class="flex-grow min-w-0">
+
+              <div class="mb-4">
+                <h3 class="text-lg md:text-2xl font-bold text-amber-200 mb-1">
+                  {{ experience.position }}
+                </h3>
+
+                <h4 class="text-base md:text-lg text-white font-semibold">
+                  {{ experience.company }}
+                </h4>
+
+                <div class="flex flex-col md:flex-row md:items-center gap-2 mt-3 text-sm text-slate-400">
+                  <div class="flex items-center">
+                    <div class="h-[1px] w-4 bg-amber-200 mr-2"></div>
+                    {{ experience.duration }}
+                  </div>
+
+                  <div class="hidden md:block text-slate-500">•</div>
+
+                  <div>{{ experience.location }}</div>
+                </div>
+              </div>
+
+              <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-5">
+                {{ experience.description }}
+              </p>
+
+              <!-- Skills -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="skill in experience.skills"
+                  :key="skill"
+                  class="px-3 py-1.5 bg-amber-200 bg-opacity-10 text-amber-200 text-xs md:text-sm rounded-full border border-amber-200 border-opacity-30">
+                  {{ skill }}
+                </span>
+              </div>
+
+            </div>
           </div>
         </div>
+
       </div>
-      
-    
-    </div>
+    </article>
   </div>
+
 </template>
 
 <script>
@@ -206,7 +226,7 @@ export default {
           duration: 'April 2026 - Aug 2026',
           location: 'Kuala Lumpur, Malaysia',
           description: 'Utilized IP management systems such as IP Pilot to manage patent records, outbound case flows, and client information. Collaborated with supervisors and business teams to validate automation requirements and workflow designs. Performed Excel data processing, validation, and formula development for IP-related calculations. Provided IT support, including laptop formatting, driver installation, and system troubleshooting.',
-          image: '/AminPortfolio/img/adastra.png',
+          image: '/AminPortfolio/img/adastraip_logo.jpg',
           skills: ['Excel','Data Analysis','IT Support & Troubleshooting']
         }
       ],
