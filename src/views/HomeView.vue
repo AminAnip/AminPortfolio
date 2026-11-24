@@ -103,7 +103,7 @@ export default {
   name: 'HomeView',
   data() {
     return {
-      toRotate: ["Final Year Student","Computer Science", "Looking for a jobs..."],
+      toRotate: ["Fresh Graduate","Computer Science", "Looking for a jobs..."],
       period: 2000,
       txt: '',
       loopNum: 0,
